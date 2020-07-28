@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>My PokeList</h1>
+        <h1 className="tittle">My PokeList</h1>
         <PokeList pokemons={this.state.pokemon} />
       </div>
     );
