@@ -18,11 +18,13 @@ class Pokemon extends React.Component {
         ) : (
           ''
         )}
-        <img
-          className="card__img"
-          src={this.props.image}
-          alt={`img-${this.props.name}`}
-        />
+        <div className="card__img__container">
+          <img
+            className="card__img"
+            src={this.props.image}
+            alt={`img-${this.props.name}`}
+          />
+        </div>
         <h2 className="card__tittle">{this.props.name.toUpperCase()}</h2>
         <ul className="types-list">{types}</ul>
       </>
